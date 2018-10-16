@@ -27,7 +27,7 @@ module.exports = function(app) {
       quantity: req.body.quantity,
       packed: req.body.packed
     }).then(function() {
-      res.redirect(307, "/api/lists");
+      res.redirect(307, "/api/list");
     }).catch(function(err) {
       console.log(err);
       res.json(err);
